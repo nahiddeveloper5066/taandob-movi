@@ -1,201 +1,143 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta property="og:image" content=" images (1).png "/>
+    <meta property="og:image" content="YOUR_IMAGE_URL_HERE"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> তান্ডব মুভি || Taandob Movie </title>
+    <title>Play Full Movie</title>
+    <style>
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: vh;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* Title styling */
+        h1 {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        /* Button styling */
+        button {
+            border-radius: 12px;
+            font-weight: bold;
+            width: 200px;
+            height: 60px;
+            border: none;
+            margin-top: 40px;
+            background-color: #1abae7;
+            font-size: 18px;
+            color: #ffffff;
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1494c4;
+            transform: scale(1.05);
+        }
+
+        /* Image styling */
+        img {
+            width: 80%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            button {
+                width: 170px;
+                height: 50px;
+                font-size: 16px;
+            }
+
+            img {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 18px;
+                margin-top: 15px;
+            }
+
+            button {
+                width: 150px;
+                height: 45px;
+                font-size: 14px;
+            }
+
+            img {
+                width: 95%;
+            }
+        }
+
+    </style>
 </head>
-<style>
 
-#button1{
-    color: rebeccapurple;
-    background: #ffa907;
-    border: navajowhite;
-    top: 50px;
-    height: 45px;
-    width: 240px;
-    position: relative;
-    left: 58px;
-    border-radius: 8px;
-    box-shadow: -1px 1px 23px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: -1px 1px 23px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 1px 23px 0px rgba(0,0,0,0.75);
-}
-#button2{
-    color: rebeccapurple;
-    background: #ffa907;
-    border: navajowhite;
-    top: 46px;
-    height: 45px;
-    width: 240px;
-    position: relative;
-    left: 58px;
-    border-radius: 8px;
-    box-shadow: -1px 1px 23px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: -1px 1px 23px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 1px 23px 0px rgba(0,0,0,0.75);
-}
-#button3{
-    color: #fefdff;
-    background: #c7c7c7;
-    border: navajowhite;
-    top: 42px;
-    height: 45px;
-    width: 196px;
-    position: relative;
-    left: 78px;
-    border-radius: 8px;
-    box-shadow: -1px 1px 23px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: -1px 1px 23px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 1px 23px 0px rgba(0,0,0,0.75);
-}
-
-
-#button1 img{
-    width: 38px;
-    position: relative;
-    left: -82px;
-    top: -51px;
-}
-
-
-
-#button2 img{
-    width: 38px;
-    position: relative;
-    left: -82px;
-    top: -51px;
-}
-
-#button3 img{
-    width: 38px;
-    position: relative;
-    left: -72px;
-    top: -52px;
-}
-
-
-.mainArea{
-    background-color: #ffffff;
-    height: 400px;
-    position: relative;
-    width: 96%;
-    left: 7px;
-    box-shadow: -1px 1px 23px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: -1px 1px 23px 0px rgb(163 159 159 / 75%);
-    -moz-box-shadow: -1px 1px 23px 0px rgba(0,0,0,0.75);
-}
-
-
-#button1 p{
-    color: #000000;
-    font-size: 17px;
-    font-weight: bold;
-    position: relative;
-    left: 7px;
-    top: -3px;
-}
-
-
-
-#button2 p{
-    color: #000000;
-    font-size: 17px;
-    font-weight: bold;
-    position: relative;
-    left: 7px;
-    top: -3px;
-}
-
-
-#button3 p{
-    color: #000000;
-    font-size: 17px;
-    font-weight: bold;
-    position: relative;
-    left: 10px;
-    top: -3px;
-}
-
-
-p{
-    font-weight: bold;
-    font-size: 19px;
-    position: relative;
-    left: 5px;
-    top: 9px;
-}
-#button1, #button2, #button3 {
-    margin-bottom: 30px; 
-    }
-</style>
 <body>
-<div class="mainArea">
+    <h1>সম্পুূর্ণ মুভিটা দেখতে ভিডিওতে অথবা প্লে বাটনে চাপুন। Click "Play Now" To Play Video</h1>
+    <img id="img" src="#" alt="Image">
 
-     <p>click to unlock button and get unlock link </p>
-    <button id="button1">
-        <p>click to unlock</p>
-        <img id="img1" src="https://cdn-icons-png.flaticon.com/512/51/51258.png" alt="">
-    </button>
-
-
-    <button id="button2">
-        <p>click to unlock</p>
-        <img id="img2" src="https://cdn-icons-png.flaticon.com/512/51/51258.png" alt="">
-    </button>
-
-    <button id="button3">
-        <p>Get Link</p>
-        <img id="img3" src="https://cdn-icons-png.flaticon.com/512/61/61457.png" alt="">
-    </button>
-</div>
+    <button id="button">Play Now</button>
 
     <script>
+        // Main content link (new tab)
+        let blogsSite = 'https://movie-duniya24.blogspot.com/2025/06/blog-post_26.html'; 
 
+        // Direct link (redirect after time)
+        let directlink = 'https://www.profitableratecpm.com/r0zb9xug3?key=2d95298311e65d8a21a09fadda900e84';
 
+        // Time to wait before redirecting (in seconds)
+        let setTime = 1;
+        let time = setTime * 1000;
 
-        let yourDirectLink = ' https://www.profitableratecpm.com/aqwvxgrk?key=e948ccbabb94d50b5082b2e79b9e0933  ';
-        let yourContentLink = '  https://movie-duniya24.blogspot.com/2025/06/blog-post_26.html  ';
-
-
-
-        
-
-        const button1 = document.getElementById('button1');
-        const button2 = document.getElementById('button2');
-        const button3 = document.getElementById('button3');
-
-        let img1 = document.getElementById('img1');
-        let img2 = document.getElementById('img2');
-        let img3 = document.getElementById('img3');
-
-        const okImg = 'https://www.freeiconspng.com/thumbs/ok-icon/check-yes-ok-icon-10.png'
-        const unlockimg = 'https://cdn-icons-png.flaticon.com/512/102/102288.png'
-
-        document.getElementById('button1').onclick = function() {
-            button1.style.background = '#c7c7c7';
-            img1.src = okImg;
-            window.open(yourDirectLink, '_blank')
-
-
-            document.getElementById('button2').onclick = () => {
-                button2.style.background = '#c7c7c7';
-                img2.src = okImg;
-                button3.style.background = '#83ff00';
-                img3.src = unlockimg ;
-                window.open(yourDirectLink, '_blank')
-
-
-
-                document.getElementById('button3').onclick = function(){
-                    window.open(yourContentLink, '_blank')
-                }
-            };
+        // Button click event
+        document.getElementById('button').onclick = function() {
+            window.open(blogsSite, '_blank');
+            setTimeout(() => {
+                window.location = directlink;
+            }, time);
         };
 
+        // Image click event
+        document.getElementById('img').onclick = function() {
+            window.open(blogsSite, '_blank');
+            setTimeout(() => {
+                window.location = directlink;
+            }, time);
+        };
 
+        // Prevent going back to the previous page
+        history.pushState(null, null, window.location.href);
+        window.addEventListener('popstate', function() {
+            window.location = directlink;
+        });
     </script>
 </body>
-  </html>
-  
+</html>
